@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import '../styles.css';
 
 export class FormHeroes extends Component {
@@ -39,7 +39,7 @@ export class FormHeroes extends Component {
 
     render() {
         return (
-            <form className="content" onSubmit={this.handleAddHero}>
+            <form onSubmit={this.handleAddHero} className="content">
                 <label>Nome</label>
                 <input
                     type="text"
