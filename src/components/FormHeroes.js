@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+=======
+import '../styles.css';
+>>>>>>> a8882cbfc9684978f411b1035e096e2f69e6feac
 
 export class FormHeroes extends Component {
     constructor(props) {
@@ -42,7 +46,7 @@ export class FormHeroes extends Component {
 
     render() {
         return (
-            <form className="content" onSubmit={this.handleAddHero}>
+            <form onSubmit={this.handleAddHero} className="content">
                 <label>Nome</label>
                 <input
                     type="text"

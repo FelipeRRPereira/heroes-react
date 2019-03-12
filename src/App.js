@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import { Header, FormHeroes, ListHeroes } from './components/imports';
+=======
+import React, { Component, Fragment  } from 'react';
+import { Header } from './components/Header';
+import { FormHeroes } from './components/FormHeroes';
+import { ListHeroes } from './components/ListHeroes';
+>>>>>>> a8882cbfc9684978f411b1035e096e2f69e6feac
 import heroes from './heroes.json';
 import './styles.css';
 import '../node_modules/font-awesome/css/font-awesome.css'
@@ -25,11 +32,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <Fragment>
         <Header />
         <FormHeroes onAddHero={this.addHero}/>
+<<<<<<< HEAD
         <ListHeroes heroes={this.state.heroes} />
       </div>
+=======
+        <ListHeroes heroes={heroes} />
+      </Fragment>
+>>>>>>> a8882cbfc9684978f411b1035e096e2f69e6feac
     );
   }
 }
