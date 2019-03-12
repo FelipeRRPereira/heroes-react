@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles.css';
 
 const Hero = props => (
     <div className="heroes">

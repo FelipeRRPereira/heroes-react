@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import '../styles.css';
+import React, { Component } from 'react';
 
 export class FormHeroes extends Component {
     constructor(props) {
@@ -35,6 +34,10 @@ export class FormHeroes extends Component {
             image: this.state.image
         }
         this.props.onAddHero(hero)
+        this.setState({
+            name: '',
+            image: ''
+        })
     }
 
     render() {

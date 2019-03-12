@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Header } from './components/Header';
-import { FormHeroes } from './components/FormHeroes';
-import { ListHeroes } from './components/ListHeroes';
+import { Header, FormHeroes, ListHeroes } from './components/imports';
 import heroes from './heroes.json';
+import './styles.css';
+import '../node_modules/font-awesome/css/font-awesome.css'
 
 class App extends Component {
   constructor(props) {
@@ -20,15 +20,15 @@ class App extends Component {
     console.log(this.state)
   }
   addHero = (hero) => {
-    const heroes = [...this.state.heroes, hero]
-    this.setState({ heroes })
+    const newHeroes = [...this.state.heroes, hero]
+    this.setState({ heroes: newHeroes })
   }
   render() {
     return (
       <div>
         <Header />
         <FormHeroes onAddHero={this.addHero}/>
-        <ListHeroes heroes={heroes} />
+        <ListHeroes heroes={this.state.heroes} />
       </div>
     );
   }

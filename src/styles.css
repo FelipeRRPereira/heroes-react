@@ -86,3 +86,8 @@ button {
   margin: 0;
   font-family: Roboto;
 }
+.fa.fa-trash-o{
+  width: 20px;
+  height: 20px;
+  color: #000;
+}

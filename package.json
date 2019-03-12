@@ -6,7 +6,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "font-awesome": "4.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
