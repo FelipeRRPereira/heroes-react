@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
-import '../styles.css';
->>>>>>> a8882cbfc9684978f411b1035e096e2f69e6feac
 
 export class FormHeroes extends Component {
     constructor(props) {
@@ -59,7 +55,7 @@ export class FormHeroes extends Component {
                     value={this.state.image}
                     onChange={this.onImageChange} 
                 />
-                <button>Enviar</button>
+                <button className="enviar">Enviar</button>
             </form>
         )
     }

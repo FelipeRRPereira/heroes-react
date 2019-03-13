@@ -46,7 +46,7 @@ input{
   border-radius: 6px;
   height: 45px;
 }
-button {
+.enviar {
   height: 55px;
   background: #FF6565;
   border: 1px solid #FF6565;
@@ -86,8 +86,16 @@ button {
   margin: 0;
   font-family: Roboto;
 }
-.fa.fa-trash-o{
-  width: 20px;
-  height: 20px;
-  color: #000;
+.fas.fa-trash{
+  color: #EF6762;
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  font-size: 25px;
+  background-color: Transparent;
+  border: none;
+  cursor:pointer;
 }

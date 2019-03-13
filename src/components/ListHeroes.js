@@ -4,6 +4,9 @@ const Hero = props => (
     <div className="heroes">
         <img className="image-hero" alt={props.name} src={props.image} />
         <h1 className="title-hero">{props.name}</h1>
+        <button type='button' className='fas fa-trash'
+            onClick='#'>
+        </button>
     </div>
 )
 
